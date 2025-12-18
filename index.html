@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новогоднее Поздравление | Создайте персональное письмо для близких</title>
+    <meta name="description" content="Создайте уникальное новогоднее письмо для ваших близких! Персонализируйте текст, выберите оформление и отправьте теплые поздравления. Бесплатно и без регистрации.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-tree"></i>
+                <h1>Новогоднее Поздравление</h1>
+            </div>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О проекте</a></li>
+                <li><a href="portfolio.html">Галерея</a></li>
+                <li><a href="blog.html">Блог</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Создайте волшебное новогоднее письмо!</h1>
+                <p>Персонализированное поздравление для ваших близких с любовью и теплом</p>
+                <a href="#create-letter" class="btn">Написать письмо <i class="fas fa-pen"></i></a>
+            </div>
+            <div class="snowflakes" aria-hidden="true">
+                <div class="snowflake">❄</div>
+                <div class="snowflake">❅</div>
+                <div class="snowflake">❆</div>
+                <div class="snowflake">❄</div>
+                <div class="snowflake">❅</div>
+                <div class="snowflake">❆</div>
+            </div>
+        </section>
+
+        <section id="create-letter" class="letter-creator">
+            <h2>Конструктор новогоднего письма</h2>
+            <div class="creator-container">
+                <div class="editor">
+                    <div class="form-group">
+                        <label for="recipient"><i class="fas fa-user"></i> Кому:</label>
+                        <input type="text" id="recipient" placeholder="Имя получателя" value="Дорогая мама">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="sender"><i class="fas fa-user-edit"></i> От кого:</label>
+                        <input type="text" id="sender" placeholder="Ваше имя" value="Твоя дочка, Катя">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message"><i class="fas fa-comment-dots"></i> Текст поздравления:</label>
+                        <textarea id="message" rows="8">Дорогая мама!
+
+Пусть этот Новый год принесет тебе крепкое здоровье, душевное спокойствие и радость каждый день! 
+Желаю, чтобы все твои мечты сбывались, а рядом всегда были те, кто дорог.
+
+Спасибо за твою бесконечную любовь и поддержку. 
+Ты - самый важный человек в моей жизни!
+
+С любовью и самыми теплыми пожеланиями в новом году!</textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label><i class="fas fa-palette"></i> Стиль письма:</label>
+                        <div class="styles">
+                            <button class="style-btn active" data-style="classic">Классический</button>
+                            <button class="style-btn" data-style="modern">Современный</button>
+                            <button class="style-btn" data-style="elegant">Элегантный</button>
+                        </div>
+                    </div>
+                    
+                    <button id="generate-btn" class="btn"><i class="fas fa-magic"></i> Создать письмо</button>
+                    <button id="save-btn" class="btn secondary"><i class="fas fa-download"></i> Сохранить как картинку</button>
+                </div>
+                
+                <div class="preview">
+                    <div class="letter-preview" id="letter-preview">
+                        <div class="letter-header">
+                            <h3>Новогоднее Поздравление</h3>
+                            <div class="decorations">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-tree"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="letter-content">
+                            <p class="recipient-line" id="preview-recipient">Дорогая мама!</p>
+                            <p id="preview-message">Пусть этот Новый год принесет тебе крепкое здоровье, душевное спокойствие и радость каждый день! 
+                            Желаю, чтобы все твои мечты сбывались, а рядом всегда были те, кто дорог.<br><br>
+                            Спасибо за твою бесконечную любовь и поддержку. 
+                            Ты - самый важный человек в моей жизни!</p>
+                            <p class="sender-line" id="preview-sender">С любовью, твоя дочка, Катя</p>
+                        </div>
+                        <div class="letter-footer">
+                            <p>С наилучшими пожеланиями в 2026 году! ❄️</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <h2>Почему стоит написать новогоднее письмо?</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <i class="fas fa-heart"></i>
+                    <h3>Личное внимание</h3>
+                    <p>Персональное письмо показывает, что вы действительно думали о человеке</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-gift"></i>
+                    <h3>Уникальный подарок</h3>
+                    <p>Слова, идущие от сердца, ценнее любого материального подарка</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-clock"></i>
+                    <h3>Память на годы</h3>
+                    <p>Такие письма хранят и перечитывают, вспоминая теплые моменты</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-magic"></i>
+                    <h3>Простота создания</h3>
+                    <p>Наш конструктор поможет создать красивое письмо за 5 минут</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Новогоднее Поздравление</h3>
+                <p>Делаем праздник ближе с 2025 года</p>
+            </div>
+            <div class="footer-section">
+                <h3>Быстрые ссылки</h3>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О проекте</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                    <li><a href="blog.html">Блог</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Контакты</h3>
+                <p><i class="fas fa-envelope"></i> info@newyear-letter.ru</p>
+                <p><i class="fas fa-phone"></i> +7 (495) 123</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Новогоднее Поздравление. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

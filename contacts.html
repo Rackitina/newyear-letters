@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты | Новогоднее Поздравление - свяжитесь с нами</title>
+    <meta name="description" content="Свяжитесь с командой проекта 'Новогоднее Поздравление'. Мы всегда рады вашим вопросам, предложениям и отзывам.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-tree"></i>
+                <h1>Новогоднее Поздравление</h1>
+            </div>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О проекте</a></li>
+                <li><a href="portfolio.html">Галерея</a></li>
+                <li><a href="blog.html">Блог</a></li>
+                <li><a href="contacts.html" class="active">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contacts-page">
+        <section class="page-header">
+            <h1>Свяжитесь с нами</h1>
+            <p>Мы всегда рады вашим вопросам, предложениям и отзывам</p>
+        </section>
+
+        <section class="contact-container">
+            <div class="contact-info">
+                <h2><i class="fas fa-info-circle"></i> Как с нами связаться</h2>
+                
+                <div class="contact-method">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Электронная почта</h3>
+                        <p>Основной: <a href="mailto:info@newyear-letter.ru">info@newyear-letter.ru</a></p>
+                        <p>Техподдержка: <a href="mailto:support@newyear-letter.ru">support@newyear-letter.ru</a></p>
+                    </div>
+                </div>
+                
+                <div class="contact-method">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Телефон</h3>
+                        <p>+7 (495) 123(по будням с 10:00 до 19:00)</p>
+                        <p>+7 (800) 100(бесплатный по России)</p>
+                    </div>
+                </div>
+                
+                
+                
+                <div class="social-links">
+                    <h3>Мы в социальных сетях</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-vk"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form-section">
+                <h2><i class="fas fa-paper-plane"></i> Отправьте нам сообщение</h2>
+                <p>Заполните форму ниже, и мы ответим вам в течение 24 часов</p>
+                
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Ваше имя *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Электронная почта *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Тема сообщения</label>
+                        <select id="subject" name="subject">
+                            <option value="general">Общий вопрос</option>
+                            <option value="support">Техническая поддержка</option>
+                            <option value="suggestion">Предложение по улучшению</option>
+                            <option value="cooperation">Сотрудничество</option>
+                            <option value="other">Другое</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Сообщение *</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+                    
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <label for="newsletter">Я хочу получать новости о проекте и новогодние советы</label>
+                    </div>
+                    
+                    <button type="submit" class="btn">Отправить сообщение <i class="fas fa-paper-plane"></i></button>
+                </form>
+                
+                <div id="form-message" class="form-message"></div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <h2><i class="fas fa-question-circle"></i> Часто задаваемые вопросы</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Бесплатно ли использование конструктора?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Да, наш конструктор полностью бесплатен. Вы можете создавать, редактировать и сохранять неограниченное количество писем без каких-либо платежей.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Можно ли отправить письмо прямо с сайта?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>В настоящее время мы предоставляем возможность скачать письмо в формате PNG или PDF, чтобы вы могли отправить его через предпочитаемый способ (email, мессенджер, распечатать). Функция прямой отправки находится в разработке.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Сохраняются ли мои письма на вашем сервере?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Нет, все письма создаются и обрабатываются непосредственно в вашем браузере. Мы не храним содержимое ваших писем на своих серверах для обеспечения максимальной конфиденциальности.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Есть ли мобильное приложение?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Пока у нас нет отдельного мобильного приложения, но наш сайт полностью адаптирован для мобильных устройств и корректно работает на смартфонах и планшетах.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Можно ли использовать свои изображения в письме?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>В текущей версии доступны только наши предустановленные стили оформления. Возможность загрузки собственных изображений планируется добавить в будущих обновлениях.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="map-section">
+            <h2><i class="fas fa-map"></i> Как нас найти</h2>
+            <div class="map-placeholder">
+                <div class="map-content">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>г. Москва, ул. Новогодняя, д. 1</h3>
+                    <p>БЦ "Зимняя Сказка", офис 202</p>
+                    <p>Ближайшая станция метро: "Новогодняя"</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Новогоднее Поздравление</h3>
+                <p>Делаем праздник ближе с 2025 года</p>
+            </div>
+            <div class="footer-section">
+                <h3>Быстрые ссылки</h3>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О проекте</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                    <li><a href="blog.html">Блог</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Контакты</h3>
+                <p><i class="fas fa-envelope"></i> info@newyear-letter.ru</p>
+                <p><i class="fas fa-phone"></i> +7 (495) 123</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Новогоднее Поздравление. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
