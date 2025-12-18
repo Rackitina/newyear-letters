@@ -5,4 +5,5 @@ Disallow: /css/
 Disallow: /js/
 Disallow: /images/
 
-Sitemap: https://[ваш-username].github.io/newyear-letters/sitemap.xml
+
+Sitemap: https://Rackitina.github.io/newyear-letters/sitemap.xml
